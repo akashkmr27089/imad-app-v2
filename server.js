@@ -9,9 +9,9 @@ var articletwo={
                 <p>There are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this world</p>
                  <p>There are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this world</p>
                   <p>There are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this worldThere are Two kind of People in this world</p>
-`
-}
-fuction Createtemplet(data){
+`}  ;
+
+function createTemplet (data){
 var title = data.title;
 var content = data.content;
 var heading = data.heading;
@@ -50,7 +50,7 @@ app.get('/article-one', function(req, res){
 });
 
 app.get('/article-two', function(req,res){
-    res.send(Createtemplet(articletwo));
+    res.send(createTemplet(articletwo));
 });
 
 app.get("/article-three", function(req,res){
